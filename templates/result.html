@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #f0f9fc;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c8f99;
+        }
+
+        .prediction-box {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            border: 2px solid #38b2b2;
+            color: #00796b;
+        }
+
+        .back-button {
+            background-color: #38b2b2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #269c94;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Prediction Result</h2>
+        <div class="prediction-box">
+            {{ prediction }}
+        </div>
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+</body>
+</html>
